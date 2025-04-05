@@ -23,7 +23,7 @@ Navigate into the project:
 cd shopping--app
 ```
 Install dependencies:
-``
+```
 npm install
 ```
 Start the development server:
