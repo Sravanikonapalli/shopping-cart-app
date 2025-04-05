@@ -1,0 +1,37 @@
+.products-con{
+    margin: 10px;
+    display: flex;
+}
+
+.product-card{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.add-btn{
+    background-color:rgb(47, 194, 252);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.add-btn:hover{
+    background-color: skyblue;
+}

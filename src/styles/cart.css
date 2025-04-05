@@ -1,0 +1,44 @@
+.cart-con{
+    background-color: #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+} 
+li{
+    list-style-type:none;
+}
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+}
+.minus-btn{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    margin-right: 5px;
+}
+.plus-btn{
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    margin-left: 5px;
+}
+.free-gift{
+    color: green;
+    margin-left: 10px;
+}
+.controls-btns{
+    margin-left: 10px;
+}
+.controls-btns button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
