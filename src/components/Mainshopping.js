@@ -26,15 +26,16 @@ const Mainshopping=()=>{
 
     const giftAdded=subTotal>=THRESHOLD;
 
-    useEffect=(()=>{
-        const giftInCart=cart.find(item=>item.id===FREE_GIFT.id);
-
-        if (subTotal>=THRESHOLD && !giftInCart) {
-            setCart(prev=>[...prev,{...FREE_GIFT,quantity:1}]);
-        } else if (subTotal<THRESHOLD && giftInCart) {
-            setCart(prev=>prev.filter(item=>item.id!==FREE_GIFT.id));
+    useEffect(() => {
+        const giftInCart = cart.find(item => item.id === FREE_GIFT.id);
+      
+        if (subTotal >= THRESHOLD && !giftInCart) {
+          setCart(prev => [...prev, { ...FREE_GIFT, quantity: 1 }]);
+        } else if (subTotal < THRESHOLD && giftInCart) {
+          setCart(prev => prev.filter(item => item.id !== FREE_GIFT.id));
         }
-    },[subTotal,cart]);
+      }, [subTotal, cart]);
+      
 
     const addToCart=(product)=>{
         setCart(prev=>{
