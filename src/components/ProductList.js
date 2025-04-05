@@ -1,6 +1,7 @@
 import '../styles/productlist.css'
 
 const ProductList = ({ products, onAdd }) => {
+    
     return (
         <div className='products-con'>
             <h1 className='products-title'>Products</h1>
